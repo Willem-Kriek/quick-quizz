@@ -11,4 +11,9 @@
   box-shadow: 8px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
-
+@media screen and (min-width: 768px) and (max-width: 2000px) {
+  .card-basic.pop-up {
+      width: 50%;
+      margin: 0 auto;
+  }
+}

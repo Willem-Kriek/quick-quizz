@@ -7,3 +7,10 @@
   color: $text-color;
   min-height: 100vh;
 }
+
+@media screen and (min-width: 768px) and (max-width: 2000px) {
+  .page-container {
+      width: 50%;
+      margin: 0 auto;
+  }
+}

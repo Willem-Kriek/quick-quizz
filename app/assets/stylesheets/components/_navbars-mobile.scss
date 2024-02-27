@@ -86,3 +86,11 @@
 .navbar-button-text {
   font-size: $xs-text;
 }
+
+@media screen and (min-width: 768px) and (max-width: 2000px) {
+  .navbar-bottom {
+      width: 48%;
+      margin: 0 auto;
+  }
+
+}

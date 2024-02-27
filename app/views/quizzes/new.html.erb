@@ -3,18 +3,18 @@
   <div class="quiz-form">
     <%= simple_form_for @quiz, html: { multipart: true } do |f| %>
       <div class="card-basic">
-        <%= f.label "Photo", class: "input-card-title" %>
+        <%= f.label "IMAGE", class: "input-card-title" %>
 
          <div class="file-input-container-image">
           <label for="file-upload" class="file-upload-label">
-            <i class="fas fa-light fa-cloud-arrow-up"></i> Upload Image
+            <i class="fas fa-light fa-cloud-arrow-up"></i> Select Image
           </label>
           <%= f.file_field :image, as: :file, input_html: { placeholder: "Give your notes", hidden: true }, id: "file-upload", class: "file-upload-input", data: { quiz_form_target: "imageInput", action: "change->quiz-form#toggleInputs" } %>
         </div>
 
         <div class="input-description">
-          <div class="input-field-text small-text">Add a photo of your notes</div>
-          <div class="input-field-text xs-text">pdf · jpeg · png</div>
+          <div class="input-field-text small-text">Upload a image with text to create a Quiz.</div>
+          <div class="input-field-text xs-text">jpeg · png</div>
         </div>
       </div>
 
@@ -22,7 +22,7 @@
 
       <div class="card-basic p-3">
         <%= f.label "Text", class: "input-card-title" %>
-        <%= f.text_area :text, placeholder: "Paste your notes or just give a topic...", class: "input-text-area", data: { quiz_form_target: "textInput", action: "change->quiz-form#toggleInputs" } %>
+        <%= f.text_area :text, placeholder: "Write any topic or key words to create a Quiz.", class: "input-text-area", data: { quiz_form_target: "textInput", action: "change->quiz-form#toggleInputs" } %>
       </div>
 
       <div data-controller="loading" class="mt-5">
