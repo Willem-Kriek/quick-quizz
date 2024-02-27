@@ -4,7 +4,6 @@ ruby "3.1.2"
 
 # Image to text converter
 gem 'rtesseract'
-
 #Image Storage
 gem "cloudinary"
 
